@@ -1,0 +1,7 @@
+be.yelido.camunda.module
+be.yelido.camunda.module.data.dto
+be.yelido.camunda.module.data.exceptions
+be.yelido.camunda.module.data.ids
+be.yelido.camunda.module.data.request
+be.yelido.camunda.module.rest
+be.yelido.camunda.module.util
