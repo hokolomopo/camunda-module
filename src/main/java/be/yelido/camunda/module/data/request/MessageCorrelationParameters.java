@@ -4,7 +4,6 @@ import be.yelido.camunda.module.data.dto.Variable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @Data

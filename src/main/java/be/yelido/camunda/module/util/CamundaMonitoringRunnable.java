@@ -1,7 +1,5 @@
 package be.yelido.camunda.module.util;
 
-import javafx.util.Pair;
-
 import java.util.Queue;
 
 public class CamundaMonitoringRunnable implements Runnable {

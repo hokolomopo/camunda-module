@@ -1,14 +1,14 @@
 package be.yelido.camunda.module.rest;
 
+import be.yelido.camunda.module.data.dto.Execution;
+import be.yelido.camunda.module.data.dto.Incident;
+import be.yelido.camunda.module.data.dto.ProcessDefinition;
+import be.yelido.camunda.module.data.dto.ProcessInstance;
 import be.yelido.camunda.module.data.request.*;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.MapType;
 import com.fasterxml.jackson.databind.type.TypeFactory;
-import be.yelido.camunda.module.data.dto.Execution;
-import be.yelido.camunda.module.data.dto.Incident;
-import be.yelido.camunda.module.data.dto.ProcessDefinition;
-import be.yelido.camunda.module.data.dto.ProcessInstance;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -16,9 +16,11 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.DefaultUriTemplateHandler;
 import org.springframework.web.util.UriComponentsBuilder;
-import org.springframework.web.util.UriTemplateHandler;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CamundaRestTemplate {
     private final RestTemplate restTemplate = new RestTemplate();

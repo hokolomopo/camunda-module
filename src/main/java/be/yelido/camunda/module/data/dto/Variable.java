@@ -3,10 +3,6 @@ package be.yelido.camunda.module.data.dto;
 import be.yelido.camunda.module.data.request.CamundaType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-
-import java.util.Collection;
 
 @Data
 @AllArgsConstructor

@@ -24,21 +24,6 @@ public class ThreadingTest {
         keyArray.add("c");
 
         camundaThreadingService.addEvent("c", () -> event("c"));
-//        Runnable producer = () -> {
-//            for(int i =0;i >=0;i++){
-//                String key = keyArray.get(i % 2);
-//                System.out.println("Producer add event to queue " + key);
-//                try {
-//                    Thread.sleep(1);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//                camundaThreadingService.addEvent(key, () -> event(key));
-//            }
-//        };
-//
-//
-//        executorService.submit(producer);
 
         for(int i =0;i <=30;i++){
             String key = keyArray.get(i % 3);

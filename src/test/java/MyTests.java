@@ -8,6 +8,7 @@ import be.yelido.camunda.module.util.CamundaToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationConfig;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.junit.Ignore;
 import org.junit.Test;
 import be.yelido.camunda.module.rest.CamundaRestTemplate;
 
@@ -18,6 +19,7 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
+@Ignore
 public class MyTests {
     public static final String url = "http://localhost:8083/rest";
 
@@ -178,14 +180,4 @@ public class MyTests {
 
     }
 
-    @Test
-    //TODO delete this
-    public void randomTest() throws Exception{
-        ObjectMapper objectMapper = new ObjectMapper();
-        AuditableT0Id id = new AuditableT0Id("uuid", "userId", "wgnr", "name");
-//        Map<String, String> map = objectMapper.convertValue(id, Map.class);
-//        System.out.println(map);
-
-        System.out.println(id.toVariableMap(objectMapper.convertValue(id, Map.class)));
-    }
 }

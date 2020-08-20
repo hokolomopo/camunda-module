@@ -5,6 +5,7 @@ import be.yelido.camunda.module.data.dto.VariableValueInfo;
 import be.yelido.camunda.module.data.request.CamundaType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.Collection;
 import java.util.HashMap;
 

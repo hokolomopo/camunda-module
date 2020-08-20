@@ -3,8 +3,10 @@ package be.yelido.camunda.module.data.ids;
 import be.yelido.camunda.module.data.dto.Variable;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.lang.reflect.Field;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public abstract class CamundaObjectIdentifier {
 
